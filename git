@@ -1,0 +1,26 @@
+[33mcommit 00f544e5ba0b7a19c091a361a27041270828014b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Hs-2300 <sharonhuang2300@outlook.com>
+Date:   Sun Dec 25 17:52:31 2022 +0800
+
+    HelloWord.cpp
+
+[33mcommit dc0628da8c173f0c9bbb6194871051aa8be19414[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 82afaef 4ceb7f2
+Author: Hs-2300 <109218525+Hs-2300@users.noreply.github.com>
+Date:   Sun Dec 25 11:21:23 2022 +0800
+
+    Merge pull request #1 from Hs-2300/main-edits
+    
+    Update README.md
+
+[33mcommit 4ceb7f20993d03a42893c3f9a93c2989e31ba16a[m
+Author: Hs-2300 <109218525+Hs-2300@users.noreply.github.com>
+Date:   Sun Dec 25 11:16:58 2022 +0800
+
+    Update README.md
+
+[33mcommit 82afaef3c0f2782d86ad3399485dbef07d80b025[m
+Author: Hs-2300 <109218525+Hs-2300@users.noreply.github.com>
+Date:   Sun Dec 25 11:09:02 2022 +0800
+
+    Initial commit
