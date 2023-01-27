@@ -25,21 +25,21 @@ string lineToPigLatin(string line){
     string word = "";
     bool start = false;//start = true:ready to tanslate a word 
     for (int i = 0; i < line.length(); i++){
+
        if (isalpha(line[i])) word += line[i];
-       else {
-        start = true;
+       else start = true;
+
         if (start){
             result += wordToPigLatin(word);
             word="";
             start = false;
             }
+
         result += line[i];
-        }
-       
-       
-    }
+        } 
+        
     return result;
-}
+    }
 
 string wordToPigLatin(string word){
     int first = findFirstVowel(word);
