@@ -1,6 +1,6 @@
-#ifndef _stringtointeger_h
-#define _stringtointeger_h
+#ifndef _stringToInteger_h
+#define _stringToInteger_h
 
-int stringToInteger(std::string str);
+int stringToInteger(string str);
 
 #endif

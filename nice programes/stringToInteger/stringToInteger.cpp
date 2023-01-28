@@ -1,21 +1,21 @@
 #include <iostream>
-#include <cctype>
 #include <string>
-#include "stringToInteger.h"
+#include <sstream>
+using namespace std;
 
-/*
- * Function name: stringToInteger
- * -------------------------------------
- * Usage: for formated input, string str with length len,
- * has (len-1) digits.    From str[0] to str[len-1] are 
- * digits.
- * -------------------------------------
- */
-int stringToInteger(std::string str){
-    if (str == "") return 0;
-    int len = str.length();
-    for (int i = 0; i < len; i++){
-        if (!isdigit(str[i])) return 0;
+void error(std::string msg);
+
+int stringToInteger(string str){
+    istringstream stream(str);
+    int value;
+    stream >> value >> ws;
+    if (stream.fail() || !stream.eof()){
+        error("stringToInteger: Illegal integer format");
     }
-    return stoi(str);
+    return value;
+}
+
+void error(string msg){
+    cerr << msg << endl;
+    exit(EXIT_FAILURE);
 }
