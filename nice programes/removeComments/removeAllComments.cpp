@@ -58,7 +58,7 @@ void recomment(int c, istream & is, ostream & os){
 //删除以"//"开始的注释
 void start_comment(istream & is, ostream & os){
     int c, d;
-    while((c = is.get()) !=  '\n');
+    while((c = is.get()) !=  '\n');//什么都不做，直到newline
     os.put(c);
 }
 
@@ -78,10 +78,10 @@ void in_comment(istream & is, ostream & os){
 void echo_quote(int c, istream & is, ostream & os){
     int d;
     os.put(c);
-    while((d = is.get()) != c){
+    while((d = is.get()) != c){//引号没有成对则输出
         os.put(d);
-        if (d == '\\'){
-            os.put(is.get());
+        if (d == '\\'){//换行符
+            os.put(is.get());//手动换行
         }
     }
     os.put(d);

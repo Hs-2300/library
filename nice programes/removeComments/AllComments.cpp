@@ -65,7 +65,7 @@ void in_comment()
     int c, d;
     c = getchar();
     d = getchar();
-    while (c != '*' || d != '/')
+    while (c != '*' || d != '/')// 非/*情况
     {
         c = d;
         d = getchar();
